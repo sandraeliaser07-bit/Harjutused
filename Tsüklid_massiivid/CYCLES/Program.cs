@@ -38,6 +38,17 @@
              * NB programm peab niikaua käima kuni kasutaja sisestus on suurem või võrdne kui 40.000
              */
 
+            float CO2tase = 0.0f;
+            while (CO2tase <= 40f)
+            {
+                Console.WriteLine("Mis on CO2t tase?");
+                CO2tase = float.Parse(Console.ReadLine());
+                if (CO2tase <= 40f)
+                {
+                    Console.WriteLine("Otsest ohtu pole");
+                }
+            }
+            Console.WriteLine("Evakuueri hoonest! CO2 tase on liiga kõrge!!");
             // 2. "vibumees"
             // tee muutuja "mehike" mille sees on täisarv 0
             // tee muutuja "vastus" mille sees on tühi tekst
